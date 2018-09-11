@@ -1,0 +1,41 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #CCE6F9;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.profileCard {
+  border-radius: 6px;
+  border: solid 1px rgb(225, 232, 237);
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+  line-height: 16px
+}
+
+.panel-heading {
+  background-color: #f5f7fa;
+  border-bottom: 1px solid #d3d6db;
+  border-radius: 4px 4px 0 0;
+  color: #4AA0EB;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 10px;
+}
