@@ -4,13 +4,14 @@ import Titles from './components/Titles';
 import TimeLineDiv from './components/TimeLineDiv';
 import Footer from './components/Footer';
 import './App.css';
+import './mystyles.css';
 
 class App extends React.Component {
   
   render() {
     return (
       <div className="grid-container">
-        <div class="item1"><Titles /></div>
+        <div className="item1"><Titles /></div>
         <div className="item2">
           left bar
         </div>
