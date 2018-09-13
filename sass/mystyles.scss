@@ -1,2 +1,28 @@
 @charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+// Set your brand colors
+$purple: #4AB3F4;
+$pink: #4A72CD;
+$brown: #007676;
+$beige-light: #9FCCEB;
+$beige-lighter: #E6ECF0;
+
+// Update Bulma's global variables
+$family-sans-serif: "Roboto+Mono", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
 @import "../node_modules/bulma/bulma.sass";
