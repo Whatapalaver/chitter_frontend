@@ -32,9 +32,10 @@ I have opted to handle this project with JS React as I've never used it and woul
 Having spent an absolute age trying to get to grips with CSS and working my way through a Udemy course on React, I have managed to:
 - [x] Retrieve a list of tweets and display on the front page
 - [x] Retrieve a list of users and display on the front page
+- [x] Improved API fetch calls to show loading indicator and load on browser refresh
 
 Horrors that still need to be addressed:
-- [ ] For both of the above I have had to create a refresh button that re-runs the api script - not ideal at all. I either want a timed refresh (which could be risky if someone was in the middle of composing a tweet), a load on browser refresh, or a single button to refresh everything.
+- [ ] ..*fixed*..
 
 Not horrors but work that needs to be done before I can call myself a developer:
 - [ ] Sign up form
