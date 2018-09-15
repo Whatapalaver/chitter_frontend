@@ -10,7 +10,7 @@ class Titles extends React.Component {
           </figure>
         </div>
         <div className="media-content">
-          <div className="content has-text-centered vertical">
+          <div className="content tc pv4">
             <h1>Chitter Frontend Challenge</h1>
           </div>
         </div>

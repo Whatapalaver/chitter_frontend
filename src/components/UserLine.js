@@ -8,7 +8,7 @@ class UserLine extends Component {
       this.state = {
         users: [],
         data:null,
-        searchTerm: '',
+        searchTerm: 'w',
         isLoading: false
       };
     }
