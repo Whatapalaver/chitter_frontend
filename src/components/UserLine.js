@@ -26,11 +26,7 @@ class UserLine extends Component {
           <p className="panel-heading has-text-centered">
             Active Users
           </p>
-          {/* <div className="panel-block"> */}
-            {/* <a className="panel-block"> */}
               <UserList users={this.state.users} />  
-            {/* </a>
-          </div>  */}
         </div>
     );
   }
