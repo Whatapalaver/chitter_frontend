@@ -7,7 +7,8 @@ class TimeLine extends Component {
       this.state = {
         tweets: [],
         data:null,
-        isLoading: false
+        isLoading: false,
+        error: null,
       };
     }
 
@@ -16,11 +17,15 @@ class TimeLine extends Component {
 
     fetch('https://chitter-backend-api.herokuapp.com/peeps')
       .then(response => response.json())
-      .then(data => this.setState({ tweets: data, isLoading: false }));
-  }
+      .then(data => this.setState({ tweets: data, isLoading: false }))
+      .catch(error => this.setState({ error, isLoading: false }));
+    }
 
   render() {
-    const { isLoading } = this.state;
+    const { isLoading, error } = this.state;
+    if (error) {
+      return <p>{error.message}</p>;
+    }
     if (isLoading) {
       return <p>Loading....</p>;
     }

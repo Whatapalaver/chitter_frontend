@@ -46,3 +46,8 @@ Notes on tech
 I've converted bulma.css to use sass. I can therefore customize in mystyles.scss
 If you run `npm run css-start` it will watch for updates and compile to css.
 If you forget to do this you will need to force the compile using `npm run css-build`
+
+Shout-outs
+---
+API assistance:
+- I found this blog to be really helpful when I panicked about where to stick my fetch call. It gave me reassurance that it was in the right spot. It also helped me to refactor so that I could get refresh on browser reload, along with loading indicator and error catching. [React Featching Data](https://www.robinwieruch.de/react-fetching-data/)
