@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Form from './Form';
 import TweetList from './TweetList';
 
 class TimeLine extends Component {
@@ -7,28 +6,31 @@ class TimeLine extends Component {
     super(props);
       this.state = {
         tweets: [],
-        loading: true
+        data:null,
+        isLoading: false
       };
     }
 
-  getPeeps = async (e) => {
-    e.preventDefault();
-    const api_call = await fetch('https://chitter-backend-api.herokuapp.com/peeps');
-    const data = await api_call.json();
-    this.setState({tweets: data});
-    console.log(data)
+  componentDidMount() {
+    this.setState({ isLoading: true });
+
+    fetch('https://chitter-backend-api.herokuapp.com/peeps')
+      .then(response => response.json())
+      .then(data => this.setState({ tweets: data, isLoading: false }));
   }
 
   render() {
+    const { isLoading } = this.state;
+    if (isLoading) {
+      return <p>Loading....</p>;
+    }
     return(
-      <div className="has-text-centered">
-        <Form getPeeps={this.getPeeps} />
-        <div className="profileCard panel"></div>
-        <div className="panel-heading">
-          <h2>See new tweets</h2>
-        </div>
+        <div className="profileCard panel has-text-centered">
+          <div className="panel-heading">
+            <h2>See new tweets</h2>
+          </div>
           <TweetList tweets={this.state.tweets} /> 
-      </div>   
+        </div>   
     );
   }
 };

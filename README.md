@@ -3,6 +3,8 @@ Chitter Frontend Challenge
 
 This is one of the tech test challenges from Week 10 at Makers. We have been provided with a backend delivering an api and have been tasked to produce a frontend for browser access.
 
+My incomplete app has been hosted on Heroku at [chitter-frontend](https://chitter-frontend.herokuapp.com/)
+
 Original Instructions
 ----
 The scenario is similar to the Chitter Challenge, except someone has already built a backend API for you and hosted it on [Heroku](https://chitter-backend-api.herokuapp.com/).
