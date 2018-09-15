@@ -6,11 +6,9 @@ const User = (props) => {
   console.log(user);
   return (
     <li>
-      
-        <div class="media-content">
-          <p class="content">@{user.handle}</p>
+        <div className="panel-block">
+          <a>@{user.handle}</a>
         </div>
-      
     </li>
     );
 };

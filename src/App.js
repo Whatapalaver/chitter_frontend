@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Titles from './components/Titles';
-import TimeLineDiv from './components/TimeLineDiv';
-import UserLineDiv from './components/UserLineDiv';
+import TimeLine from './components/TimeLine';
+import UserLine from './components/UserLine';
 import Footer from './components/Footer';
 import './App.css';
 import './mystyles.css';
@@ -25,12 +25,12 @@ class App extends Component {
               </div>
 	            <div className="column is-half">
                 <div className="notification">
-		              <TimeLineDiv />
+		              <TimeLine />
                 </div>
               </div>
               <div className="column">
                 <div className="notification">
-		              <UserLineDiv />
+		              <UserLine />
                 </div>
               </div>
             </div>

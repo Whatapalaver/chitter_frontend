@@ -21,10 +21,17 @@ class UserLine extends Component {
 
   render() {
     return(
-      <div className="has-text-centered">
-        <UserRefresh getUsers={this.getUsers} />
-        <UserList users={this.state.users} />    
-      </div>
+        <div className="panel">
+          <UserRefresh getUsers={this.getUsers} />
+          <p className="panel-heading has-text-centered">
+            Active Users
+          </p>
+          {/* <div className="panel-block"> */}
+            {/* <a className="panel-block"> */}
+              <UserList users={this.state.users} />  
+            {/* </a>
+          </div>  */}
+        </div>
     );
   }
 };

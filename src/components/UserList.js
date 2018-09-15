@@ -6,9 +6,11 @@ const UserList = (props) => {
     return <User key = {user.id} user={user} />
   });
   return (
-    <ul>
-      {users}
-    </ul>
+    <div className="panel-block">    
+      <ul className="panel-block">
+        <p>{users}</p>
+      </ul>
+    </div> 
   );
 };
 

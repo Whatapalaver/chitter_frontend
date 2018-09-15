@@ -23,8 +23,12 @@ class TimeLine extends Component {
     return(
       <div className="has-text-centered">
         <Form getPeeps={this.getPeeps} />
-        <TweetList tweets={this.state.tweets} />    
-      </div>
+        <div className="profileCard panel"></div>
+        <div className="panel-heading">
+          <h2>See new tweets</h2>
+        </div>
+          <TweetList tweets={this.state.tweets} /> 
+      </div>   
     );
   }
 };
