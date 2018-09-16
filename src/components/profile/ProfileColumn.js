@@ -2,8 +2,6 @@ import React from 'react';
 import SignupForm from './SignupForm'
 import PostTweetForm from './PostTweetForm'
 
-
-
 class ProfileColumn extends React.Component {
   constructor(props) {
     super(props);
@@ -12,7 +10,7 @@ class ProfileColumn extends React.Component {
         sessionkey: null,
       };
     }
-  
+
   render() {
     if (!this.state.sessionkey) {
       return (

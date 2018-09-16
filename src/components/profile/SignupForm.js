@@ -22,7 +22,10 @@ const SignupForm = props => (
 					</div>
 				</fieldset>
 				<div className="">
-					<input className="f6 link dim br3 ph3 pv2 mb2 dib white bg-light-blue" type="submit" value="Sign up / Log in" />
+					<input className="f6 link dim br3 ph3 pv2 mb2 dib white bg-light-blue" 
+						type="submit" 
+						value="Sign up / Log in" 
+					/>
 				</div>
 			</form>
 		</main>
