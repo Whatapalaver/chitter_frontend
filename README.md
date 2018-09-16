@@ -34,12 +34,19 @@ Having spent an absolute age trying to get to grips with CSS and working my way 
 - [x] Retrieve a list of users and display on the front page
 - [x] Improved API fetch calls to show loading indicator and load on browser refresh
 
+*At day 4*
+- [x] User can create an account and retrieve a session id
+- [x] A search facility has been implemented for user handles
+- [x] I have now managed to post to an API
+
 Horrors that still need to be addressed:
-- [ ] ..*fixed*..
+- [ ] I haven't managed to post a tweet yet!
+- [ ] Session id's are not persisting
+- [ ] I have a conditional on the profile column which only shows the tweet box if a session id exists. This doesn't automatically reload when a session has been created.
 
 Not horrors but work that needs to be done before I can call myself a developer:
-- [ ] Sign up form
-- [ ] Post to an api
+- [x] Sign up form
+- [x] Post to an api
 
 Notes on tech
 ---
