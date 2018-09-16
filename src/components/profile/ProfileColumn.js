@@ -1,5 +1,8 @@
 import React from 'react';
 import SignupForm from './SignupForm'
+import PostTweetForm from './PostTweetForm'
+
+
 
 class ProfileColumn extends React.Component {
   constructor(props) {
@@ -9,13 +12,27 @@ class ProfileColumn extends React.Component {
         sessionkey: null,
       };
     }
+  
   render() {
-    return (
-      <div className="profileCard panel has-text-centered">
-        <div className="panel-heading">
-          <h2>{"Welcome " + this.state.username } </h2>
+    if (!this.state.sessionkey) {
+      return (
+        <div className="profileCard panel has-text-centered">
+          <div className="panel-heading">
+            <h2>Welcome to Chitter</h2>
+            <p>Please create a username to tweet!</p>
+          </div>
+            <SignupForm />
         </div>
-          <SignupForm />
+      );
+    }
+    return (
+      <div>
+        <div className="panel-heading">
+          <h2>{"Welcome back " + this.state.username }</h2>
+        </div>
+        <div>
+          <PostTweetForm />
+        </div>
       </div>
     );
   }
