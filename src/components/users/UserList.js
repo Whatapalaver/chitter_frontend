@@ -7,8 +7,8 @@ const UserList = (props) => {
   });
   return (
     <div className="panel-block">    
-      <ul className="panel-block">
-        <p>{users}</p>
+      <ul className="center">
+        {users}
       </ul>
     </div> 
   );

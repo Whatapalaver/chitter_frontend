@@ -42,7 +42,7 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="footer is-paddingless-vertical">
+          <div className="footer pa0 mv3">
             <Footer />
           </div>
         </section>  

@@ -14,10 +14,7 @@ const SignupForm = props => (
 					</div>
 				</fieldset>
 				<div className="">
-					<input className="f6 link dim br3 ph3 pv2 mb2 dib white bg-light-purple" type="submit" value="Sign up" />
-				</div>
-				<div className="lh-copy mt3">
-					<a href="#0" className="f6 link dim black db">Log in</a>
+					<input className="f6 link dim br3 ph3 pv2 mb2 dib white bg-light-purple" type="submit" value="Sign up / Log in" />
 				</div>
 			</form>
 		</main>

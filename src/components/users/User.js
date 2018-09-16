@@ -5,7 +5,7 @@ const User = (props) => {
   const user = props.user;
   console.log(user);
   return (
-    <li className="panel-block is-paddingless">
+    <li>
       <a>@{user.handle}</a>
     </li>
     );
