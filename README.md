@@ -49,6 +49,9 @@ If you forget to do this you will need to force the compile using `npm run css-b
 
 Shout-outs
 ---
-API assistance:
-- I found this blog to be really helpful when I panicked about where to stick my fetch call. It gave me reassurance that it was in the right spot. It also helped me to refactor so that I could get refresh on browser reload, along with loading indicator and error catching. [React Featching Data](https://www.robinwieruch.de/react-fetching-data/)
+API assistance:  
+- I found Robin's blog to be really helpful when I panicked about where to stick my fetch call. It gave me reassurance that it was in the right spot. It also helped me to refactor so that I could get refresh on browser reload, along with loading indicator and error catching. [React Featching Data](https://www.robinwieruch.de/react-fetching-data/)
 - And the same source but this time for [storing state (or sessions) in React](https://www.robinwieruch.de/local-storage-react/), using sessionstorage or localstorage - both browser features for maintaining state.
+
+Styling:  
+- [Tachyons for styling](https://roperzh.github.io/tachyons-cheatsheet/). I started trying to work with Bulma but found I was having to create so many additional styles that it felt pointless. Tachyons are a total joy though. You can chain features together in your class names and they are so logical.
