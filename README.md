@@ -40,9 +40,9 @@ Having spent an absolute age trying to get to grips with CSS and working my way 
 - [x] I have now managed to post to an API
 
 Horrors that still need to be addressed:
-- [ ] I haven't managed to post a tweet yet!
-- [ ] Session id's are not persisting
+- [ ] I haven't managed to post a tweet yet! I am getting an unathorised message and I'm not sure if thats because I haven't formatted my header correctly
 - [ ] I have a conditional on the profile column which only shows the tweet box if a session id exists. This doesn't automatically reload when a session has been created.
+- [ ] Session id's are not persisting but I have got around that by temporarily showing the tweet box
 
 Not horrors but work that needs to be done before I can call myself a developer:
 - [x] Sign up form
