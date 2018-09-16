@@ -5,12 +5,20 @@ const SignupForm = props => (
 			<form className="measure center">
 				<fieldset id="sign_up" className="ba b--transparent ph0 mh0">
 					<div className="mt3">
-						<label className="db fw6 lh-copy f6" for="username">Username</label>
-						<input className="pa1 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="username"  id="username" />
+						<input className="b--silver pa1 input-reset ba bg-transparent hover-bg-mid-gray hover-white w-100" 
+							type="text" 
+							name="username"  
+							id="username" 
+							placeholder="username" 
+						/>
 					</div>
 					<div className="mv3">
-						<label className="db fw6 lh-copy f6" for="password">Password</label>
-						<input className="b pa1 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password"  id="password" />
+						<input className="b--silver pa1 input-reset ba bg-transparent hover-bg-mid-gray hover-white w-100" 
+							type="password" 
+							name="password"  
+							id="password" 
+							placeholder="password" 
+						/>
 					</div>
 				</fieldset>
 				<div className="">

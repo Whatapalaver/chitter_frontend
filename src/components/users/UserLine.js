@@ -37,8 +37,8 @@ class UserLine extends Component {
         <div className="profileCard panel has-text-centered">
           <div className="panel-heading">
             <h2>Active Users</h2>
-            <UserSearch searchChange={this.onSearchChange}/>
           </div>
+            <UserSearch searchChange={this.onSearchChange}/>
             <UserList users={filteredUsers} />  
         </div>
     );
