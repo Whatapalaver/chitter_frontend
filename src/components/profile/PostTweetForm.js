@@ -5,7 +5,6 @@ class PostTweetForm extends React.Component {
     super(props);
       this.state = {
         peep: [],
-        user_id: null,
         body: ''
       };
     }
@@ -19,12 +18,14 @@ class PostTweetForm extends React.Component {
     fetch('https://chitter-backend-api.herokuapp.com/peeps', {
       method: "POST",
       headers: {
-          "Content-Type": "application/json"
+        'Authorization': `Token token=${this.state.session_key}`,
+        'Content-Type': 'application/json'
       },
+      
       body: JSON.stringify({
           peep: {
-              body: this.state.body,
-              user_id: this.state.user_id
+            user_id: this.state.user_id,
+            body: this.state.body
           }
       })
     })
@@ -37,7 +38,7 @@ render() {
   return (
     <main className="pa2 grey-80">
       <form onSubmit={e => this.PostPeep(e)} className="measure center">
-        <input className="b--silver pa1 input-reset ba bg-transparent hover-bg-mid-gray hover-white w-100" 
+        <input className="b--silver db border-box w-100 measure ba pa2 br2 mb2 ba bg-transparent hover-bg-mid-gray hover-white w-100" 
           type="text-area" 
           name="body"  
           id="body"

@@ -54,10 +54,12 @@ class SignupForm extends React.Component {
 			console.log(json);
 				this.setState({
 					session_key: json.session_key,
+					user_id: json.user_id
 				});
 			
 			console.log("session key added")
 			console.log(this.state.session_key)		
+			console.log(this.state.user_id)	
 		}
 		);
 	}

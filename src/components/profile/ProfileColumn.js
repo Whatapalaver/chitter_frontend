@@ -20,6 +20,7 @@ class ProfileColumn extends React.Component {
             <p>Please create a username to tweet!</p>
           </div>
             <SignupForm />
+            <PostTweetForm />
         </div>
       );
     }
