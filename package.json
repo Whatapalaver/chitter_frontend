@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "bulma": "^0.7.1",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.12.0"
   }
 }
