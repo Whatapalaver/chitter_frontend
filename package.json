@@ -18,7 +18,7 @@
     "css-start": "npm run css-watch"
   },
   "devDependencies": {
-    "bulma": "^0.7.1",
+    "bulma": "^0.7.5",
     "node-sass": "^4.9.3"
   }
 }
